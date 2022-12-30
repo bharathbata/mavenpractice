@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>org.antframework.boot</groupId>
+        <artifactId>ant-boot-starter-parent</artifactId>
+        <version>2.7.4</version>
+    </parent>
+
+    <groupId>hdfc</groupId>
+    <artifactId>hdfc</artifactId>
+    <version>1.0</version>
+    <packaging>pom</packaging>
+
+    <name>hdfc</name>
+
+    <modules>
+        <module>hdfc-facade</module>
+        <module>hdfc-common</module>
+        <module>hdfc-dal</module>
+        <module>hdfc-integration</module>
+        <module>hdfc-biz</module>
+        <module>hdfc-web</module>
+        <module>hdfc-assembly</module>
+        <module>hdfc-test</module>
+    </modules>
+
+    <dependencyManagement>
+        <dependencies>
+            <!--在此进行依赖版本管理-->
+        </dependencies>
+    </dependencyManagement>
+    <dependencies>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <scope>provided</scope>
+            <optional>true</optional>
+        </dependency>
+    </dependencies>
+</project>
